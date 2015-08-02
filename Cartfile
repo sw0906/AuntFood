@@ -1,0 +1,8 @@
+github "TransitApp/SVProgressHUD"
+github "BradLarson/GPUImage"
+github "thoughtbot/Argo"
+github "Alamofire/Alamofire"
+github "DaveWoodCom/XCGLogger"
+github "iv-mexx/FormatterKit" "feature/supportFrameworks"
+github "JonasGessner/JGProgressHUD"
+github "rs/SDWebImage"

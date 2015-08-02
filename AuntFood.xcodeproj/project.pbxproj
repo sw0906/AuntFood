@@ -14,6 +14,11 @@
 		AB43E7CA1B64AA560086D0D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB43E7C91B64AA560086D0D6 /* Images.xcassets */; };
 		AB43E7CD1B64AA560086D0D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB43E7CB1B64AA560086D0D6 /* LaunchScreen.xib */; };
 		AB43E7D91B64AA560086D0D6 /* AuntFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E7D81B64AA560086D0D6 /* AuntFoodTests.swift */; };
+		AB43E7E31B64AB5F0086D0D6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB43E7E21B64AB5F0086D0D6 /* Login.storyboard */; };
+		ABB25C101B652A53004DECDC /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB25C0F1B652A53004DECDC /* SVProgressHUD.framework */; };
+		ABB25C121B652CB8004DECDC /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB25C111B652CB8004DECDC /* LoginMainViewController.swift */; };
+		ABB25C2D1B652E22004DECDC /* Authentications in Resources */ = {isa = PBXBuildFile; fileRef = ABB25C2C1B652E22004DECDC /* Authentications */; };
+		ABB25C2F1B652ECA004DECDC /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = ABB25C2E1B652ECA004DECDC /* Cartfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		AB43E7D21B64AA560086D0D6 /* AuntFoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuntFoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB43E7D71B64AA560086D0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB43E7D81B64AA560086D0D6 /* AuntFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuntFoodTests.swift; sourceTree = "<group>"; };
+		AB43E7E21B64AB5F0086D0D6 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		ABB25C0F1B652A53004DECDC /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		ABB25C111B652CB8004DECDC /* LoginMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
+		ABB25C2C1B652E22004DECDC /* Authentications */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Authentications; sourceTree = "<group>"; };
+		ABB25C2E1B652ECA004DECDC /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB25C101B652A53004DECDC /* SVProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +75,8 @@
 				AB43E7BD1B64AA560086D0D6 /* AuntFood */,
 				AB43E7D51B64AA560086D0D6 /* AuntFoodTests */,
 				AB43E7BC1B64AA560086D0D6 /* Products */,
+				ABB25C2E1B652ECA004DECDC /* Cartfile */,
+				ABB25C0E1B6529C2004DECDC /* Framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +92,10 @@
 		AB43E7BD1B64AA560086D0D6 /* AuntFood */ = {
 			isa = PBXGroup;
 			children = (
+				AB43E7E51B64ABA50086D0D6 /* Main */,
+				AB43E7E41B64AB7A0086D0D6 /* login */,
+				AB43E7E61B64ABB40086D0D6 /* Category */,
 				AB43E7C01B64AA560086D0D6 /* AppDelegate.swift */,
-				AB43E7C21B64AA560086D0D6 /* FirstViewController.swift */,
-				AB43E7C41B64AA560086D0D6 /* SecondViewController.swift */,
-				AB43E7C61B64AA560086D0D6 /* Main.storyboard */,
 				AB43E7C91B64AA560086D0D6 /* Images.xcassets */,
 				AB43E7CB1B64AA560086D0D6 /* LaunchScreen.xib */,
 				AB43E7BE1B64AA560086D0D6 /* Supporting Files */,
@@ -113,6 +126,49 @@
 				AB43E7D71B64AA560086D0D6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB43E7E41B64AB7A0086D0D6 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				ABB25C131B652D79004DECDC /* Model */,
+				AB43E7E21B64AB5F0086D0D6 /* Login.storyboard */,
+				ABB25C111B652CB8004DECDC /* LoginMainViewController.swift */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		AB43E7E51B64ABA50086D0D6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AB43E7C21B64AA560086D0D6 /* FirstViewController.swift */,
+				AB43E7C41B64AA560086D0D6 /* SecondViewController.swift */,
+				AB43E7C61B64AA560086D0D6 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		AB43E7E61B64ABB40086D0D6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		ABB25C0E1B6529C2004DECDC /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				ABB25C0F1B652A53004DECDC /* SVProgressHUD.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		ABB25C131B652D79004DECDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABB25C2C1B652E22004DECDC /* Authentications */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +251,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB25C2F1B652ECA004DECDC /* Cartfile in Resources */,
 				AB43E7C81B64AA560086D0D6 /* Main.storyboard in Resources */,
 				AB43E7CD1B64AA560086D0D6 /* LaunchScreen.xib in Resources */,
 				AB43E7CA1B64AA560086D0D6 /* Images.xcassets in Resources */,
+				ABB25C2D1B652E22004DECDC /* Authentications in Resources */,
+				AB43E7E31B64AB5F0086D0D6 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB43E7C51B64AA560086D0D6 /* SecondViewController.swift in Sources */,
+				ABB25C121B652CB8004DECDC /* LoginMainViewController.swift in Sources */,
 				AB43E7C11B64AA560086D0D6 /* AppDelegate.swift in Sources */,
 				AB43E7C31B64AA560086D0D6 /* FirstViewController.swift in Sources */,
 			);
@@ -344,6 +404,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AuntFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +418,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AuntFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +481,7 @@
 				AB43E7DE1B64AA560086D0D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB43E7DF1B64AA560086D0D6 /* Build configuration list for PBXNativeTarget "AuntFoodTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +490,7 @@
 				AB43E7E11B64AA560086D0D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
