@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB219F3C1B70800600A790DD /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB219F3B1B70800600A790DD /* UIViewEx.swift */; };
 		AB43E7C11B64AA560086D0D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E7C01B64AA560086D0D6 /* AppDelegate.swift */; };
 		AB43E7C31B64AA560086D0D6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E7C21B64AA560086D0D6 /* FirstViewController.swift */; };
 		AB43E7C51B64AA560086D0D6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E7C41B64AA560086D0D6 /* SecondViewController.swift */; };
@@ -15,7 +16,26 @@
 		AB43E7CD1B64AA560086D0D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB43E7CB1B64AA560086D0D6 /* LaunchScreen.xib */; };
 		AB43E7D91B64AA560086D0D6 /* AuntFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E7D81B64AA560086D0D6 /* AuntFoodTests.swift */; };
 		AB43E7E31B64AB5F0086D0D6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB43E7E21B64AB5F0086D0D6 /* Login.storyboard */; };
-		ABB25C101B652A53004DECDC /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB25C0F1B652A53004DECDC /* SVProgressHUD.framework */; };
+		AB4F4E3D1B6F4A9E007C4B9A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E371B6F4A9E007C4B9A /* Alamofire.framework */; };
+		AB4F4E3E1B6F4A9E007C4B9A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E371B6F4A9E007C4B9A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB4F4E3F1B6F4A9E007C4B9A /* FormatterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E381B6F4A9E007C4B9A /* FormatterKit.framework */; };
+		AB4F4E401B6F4A9E007C4B9A /* FormatterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E381B6F4A9E007C4B9A /* FormatterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB4F4E411B6F4A9E007C4B9A /* JGProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E391B6F4A9E007C4B9A /* JGProgressHUD.framework */; };
+		AB4F4E421B6F4A9E007C4B9A /* JGProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E391B6F4A9E007C4B9A /* JGProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB4F4E431B6F4A9E007C4B9A /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E3A1B6F4A9E007C4B9A /* SVProgressHUD.framework */; };
+		AB4F4E441B6F4A9E007C4B9A /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E3A1B6F4A9E007C4B9A /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB4F4E451B6F4A9F007C4B9A /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E3B1B6F4A9E007C4B9A /* WebImage.framework */; };
+		AB4F4E461B6F4A9F007C4B9A /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E3B1B6F4A9E007C4B9A /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB4F4E471B6F4A9F007C4B9A /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E3C1B6F4A9E007C4B9A /* XCGLogger.framework */; };
+		AB4F4E481B6F4A9F007C4B9A /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F4E3C1B6F4A9E007C4B9A /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB4F4E511B6F4DEE007C4B9A /* SWComboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F4E4F1B6F4DEE007C4B9A /* SWComboxView.swift */; };
+		AB4F4E521B6F4DEE007C4B9A /* SWComboxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4F4E501B6F4DEE007C4B9A /* SWComboxView.xib */; };
+		AB4F4E541B6F4E7D007C4B9A /* icn-dropdown.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AB4F4E531B6F4E7D007C4B9A /* icn-dropdown.pdf */; };
+		AB4F4E561B6F4EF5007C4B9A /* SWComboxCountry.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4F4E551B6F4EF5007C4B9A /* SWComboxCountry.xib */; };
+		AB4F4E581B6F4F07007C4B9A /* SWComboxCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F4E571B6F4F07007C4B9A /* SWComboxCountry.swift */; };
+		AB4F4E5A1B6F54A6007C4B9A /* SWComboxTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4F4E591B6F54A6007C4B9A /* SWComboxTitle.xib */; };
+		AB4F4E5C1B6F54C4007C4B9A /* SWComboxTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F4E5B1B6F54C4007C4B9A /* SWComboxTitle.swift */; };
+		AB4F4E5E1B6F56D1007C4B9A /* SWComboxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F4E5D1B6F56D1007C4B9A /* SWComboxHelper.swift */; };
 		ABB25C121B652CB8004DECDC /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB25C111B652CB8004DECDC /* LoginMainViewController.swift */; };
 		ABB25C2D1B652E22004DECDC /* Authentications in Resources */ = {isa = PBXBuildFile; fileRef = ABB25C2C1B652E22004DECDC /* Authentications */; };
 		ABB25C2F1B652ECA004DECDC /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = ABB25C2E1B652ECA004DECDC /* Cartfile */; };
@@ -31,7 +51,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AB4F4E491B6F4A9F007C4B9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB4F4E401B6F4A9E007C4B9A /* FormatterKit.framework in Embed Frameworks */,
+				AB4F4E461B6F4A9F007C4B9A /* WebImage.framework in Embed Frameworks */,
+				AB4F4E3E1B6F4A9E007C4B9A /* Alamofire.framework in Embed Frameworks */,
+				AB4F4E441B6F4A9E007C4B9A /* SVProgressHUD.framework in Embed Frameworks */,
+				AB4F4E421B6F4A9E007C4B9A /* JGProgressHUD.framework in Embed Frameworks */,
+				AB4F4E481B6F4A9F007C4B9A /* XCGLogger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AB219F3B1B70800600A790DD /* UIViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
 		AB43E7BB1B64AA560086D0D6 /* AuntFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuntFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB43E7BF1B64AA560086D0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB43E7C01B64AA560086D0D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +84,20 @@
 		AB43E7D71B64AA560086D0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB43E7D81B64AA560086D0D6 /* AuntFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuntFoodTests.swift; sourceTree = "<group>"; };
 		AB43E7E21B64AB5F0086D0D6 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		ABB25C0F1B652A53004DECDC /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		AB4F4E371B6F4A9E007C4B9A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		AB4F4E381B6F4A9E007C4B9A /* FormatterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FormatterKit.framework; path = Carthage/Build/iOS/FormatterKit.framework; sourceTree = "<group>"; };
+		AB4F4E391B6F4A9E007C4B9A /* JGProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JGProgressHUD.framework; path = Carthage/Build/iOS/JGProgressHUD.framework; sourceTree = "<group>"; };
+		AB4F4E3A1B6F4A9E007C4B9A /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		AB4F4E3B1B6F4A9E007C4B9A /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
+		AB4F4E3C1B6F4A9E007C4B9A /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		AB4F4E4F1B6F4DEE007C4B9A /* SWComboxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWComboxView.swift; sourceTree = "<group>"; };
+		AB4F4E501B6F4DEE007C4B9A /* SWComboxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWComboxView.xib; sourceTree = "<group>"; };
+		AB4F4E531B6F4E7D007C4B9A /* icn-dropdown.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "icn-dropdown.pdf"; sourceTree = "<group>"; };
+		AB4F4E551B6F4EF5007C4B9A /* SWComboxCountry.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWComboxCountry.xib; sourceTree = "<group>"; };
+		AB4F4E571B6F4F07007C4B9A /* SWComboxCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWComboxCountry.swift; sourceTree = "<group>"; };
+		AB4F4E591B6F54A6007C4B9A /* SWComboxTitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWComboxTitle.xib; sourceTree = "<group>"; };
+		AB4F4E5B1B6F54C4007C4B9A /* SWComboxTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWComboxTitle.swift; sourceTree = "<group>"; };
+		AB4F4E5D1B6F56D1007C4B9A /* SWComboxHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWComboxHelper.swift; sourceTree = "<group>"; };
 		ABB25C111B652CB8004DECDC /* LoginMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
 		ABB25C2C1B652E22004DECDC /* Authentications */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Authentications; sourceTree = "<group>"; };
 		ABB25C2E1B652ECA004DECDC /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
@@ -55,7 +108,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB25C101B652A53004DECDC /* SVProgressHUD.framework in Frameworks */,
+				AB4F4E3F1B6F4A9E007C4B9A /* FormatterKit.framework in Frameworks */,
+				AB4F4E451B6F4A9F007C4B9A /* WebImage.framework in Frameworks */,
+				AB4F4E3D1B6F4A9E007C4B9A /* Alamofire.framework in Frameworks */,
+				AB4F4E431B6F4A9E007C4B9A /* SVProgressHUD.framework in Frameworks */,
+				AB4F4E411B6F4A9E007C4B9A /* JGProgressHUD.framework in Frameworks */,
+				AB4F4E471B6F4A9F007C4B9A /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +127,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB219F4D1B70CDDB00A790DD /* Combox */ = {
+			isa = PBXGroup;
+			children = (
+				AB4F4E4F1B6F4DEE007C4B9A /* SWComboxView.swift */,
+				AB4F4E501B6F4DEE007C4B9A /* SWComboxView.xib */,
+				AB4F4E5D1B6F56D1007C4B9A /* SWComboxHelper.swift */,
+				AB219F4E1B70CDE400A790DD /* view */,
+			);
+			name = Combox;
+			sourceTree = "<group>";
+		};
+		AB219F4E1B70CDE400A790DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AB4F4E591B6F54A6007C4B9A /* SWComboxTitle.xib */,
+				AB4F4E5B1B6F54C4007C4B9A /* SWComboxTitle.swift */,
+				AB4F4E551B6F4EF5007C4B9A /* SWComboxCountry.xib */,
+				AB4F4E571B6F4F07007C4B9A /* SWComboxCountry.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		AB43E7B21B64AA560086D0D6 = {
 			isa = PBXGroup;
 			children = (
@@ -92,11 +172,13 @@
 		AB43E7BD1B64AA560086D0D6 /* AuntFood */ = {
 			isa = PBXGroup;
 			children = (
+				AB4F4E4E1B6F4DD9007C4B9A /* CommonView */,
 				AB43E7E51B64ABA50086D0D6 /* Main */,
 				AB43E7E41B64AB7A0086D0D6 /* login */,
 				AB43E7E61B64ABB40086D0D6 /* Category */,
 				AB43E7C01B64AA560086D0D6 /* AppDelegate.swift */,
 				AB43E7C91B64AA560086D0D6 /* Images.xcassets */,
+				AB4F4E531B6F4E7D007C4B9A /* icn-dropdown.pdf */,
 				AB43E7CB1B64AA560086D0D6 /* LaunchScreen.xib */,
 				AB43E7BE1B64AA560086D0D6 /* Supporting Files */,
 			);
@@ -151,14 +233,28 @@
 		AB43E7E61B64ABB40086D0D6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				AB219F3B1B70800600A790DD /* UIViewEx.swift */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		AB4F4E4E1B6F4DD9007C4B9A /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				AB219F4D1B70CDDB00A790DD /* Combox */,
+			);
+			name = CommonView;
 			sourceTree = "<group>";
 		};
 		ABB25C0E1B6529C2004DECDC /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				ABB25C0F1B652A53004DECDC /* SVProgressHUD.framework */,
+				AB4F4E371B6F4A9E007C4B9A /* Alamofire.framework */,
+				AB4F4E381B6F4A9E007C4B9A /* FormatterKit.framework */,
+				AB4F4E391B6F4A9E007C4B9A /* JGProgressHUD.framework */,
+				AB4F4E3A1B6F4A9E007C4B9A /* SVProgressHUD.framework */,
+				AB4F4E3B1B6F4A9E007C4B9A /* WebImage.framework */,
+				AB4F4E3C1B6F4A9E007C4B9A /* XCGLogger.framework */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -181,6 +277,7 @@
 				AB43E7B71B64AA560086D0D6 /* Sources */,
 				AB43E7B81B64AA560086D0D6 /* Frameworks */,
 				AB43E7B91B64AA560086D0D6 /* Resources */,
+				AB4F4E491B6F4A9F007C4B9A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,10 +350,14 @@
 			files = (
 				ABB25C2F1B652ECA004DECDC /* Cartfile in Resources */,
 				AB43E7C81B64AA560086D0D6 /* Main.storyboard in Resources */,
+				AB4F4E561B6F4EF5007C4B9A /* SWComboxCountry.xib in Resources */,
 				AB43E7CD1B64AA560086D0D6 /* LaunchScreen.xib in Resources */,
+				AB4F4E521B6F4DEE007C4B9A /* SWComboxView.xib in Resources */,
+				AB4F4E541B6F4E7D007C4B9A /* icn-dropdown.pdf in Resources */,
 				AB43E7CA1B64AA560086D0D6 /* Images.xcassets in Resources */,
 				ABB25C2D1B652E22004DECDC /* Authentications in Resources */,
 				AB43E7E31B64AB5F0086D0D6 /* Login.storyboard in Resources */,
+				AB4F4E5A1B6F54A6007C4B9A /* SWComboxTitle.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +375,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB219F3C1B70800600A790DD /* UIViewEx.swift in Sources */,
+				AB4F4E5E1B6F56D1007C4B9A /* SWComboxHelper.swift in Sources */,
+				AB4F4E511B6F4DEE007C4B9A /* SWComboxView.swift in Sources */,
+				AB4F4E5C1B6F54C4007C4B9A /* SWComboxTitle.swift in Sources */,
 				AB43E7C51B64AA560086D0D6 /* SecondViewController.swift in Sources */,
 				ABB25C121B652CB8004DECDC /* LoginMainViewController.swift in Sources */,
 				AB43E7C11B64AA560086D0D6 /* AppDelegate.swift in Sources */,
 				AB43E7C31B64AA560086D0D6 /* FirstViewController.swift in Sources */,
+				AB4F4E581B6F4F07007C4B9A /* SWComboxCountry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -411,6 +518,8 @@
 				INFOPLIST_FILE = AuntFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -418,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -425,6 +535,7 @@
 				INFOPLIST_FILE = AuntFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
