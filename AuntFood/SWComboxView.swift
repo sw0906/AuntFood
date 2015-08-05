@@ -18,7 +18,7 @@ import UIKit
 
 class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
 {
-
+    
     @IBOutlet weak var arrow: UIImageView!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var button: UIButton!
@@ -40,10 +40,9 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     
     //MARK: bind
-    func bindData(data: NSArray, comboxHelper: SWComboxCommonHelper, seletedIndex: Int, superV: UIView, comboxDelegate:SWComboxViewDelegate)
+    func bindData(data: NSArray, comboxHelper: SWComboxCommonHelper, seletedIndex: Int, comboxDelegate:SWComboxViewDelegate)
     {
         defaultIndex = seletedIndex
-        supView = superV
         delegate = comboxDelegate
         list = data
         helper = comboxHelper
@@ -95,6 +94,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         {
             orginY += supviewR!.frame.origin.y
             orginX += supviewR!.frame.origin.x
+            supView = supviewR
             supviewR = supviewR?.superview
         }
         
@@ -105,10 +105,14 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         tableView.dataSource = self
         tableView.layer.borderWidth = 0.5;
         tableView.layer.borderColor = UIColor.lightGrayColor().CGColor;
-        supView.addSubview(tableView)
+        
+        if let parentV = supviewR
+        {
+            parentV.addSubview(tableView)
+        }
     }
     
-
+    
     //MARK: table
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
@@ -121,7 +125,6 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         print("table frame is \(self.tableView.frame)\n")
         var cell = helper.getCurrentCell(self.tableView, data: list[indexPath.row])
-        //cell.addBottomLine(UIColor.lightGrayColor())
         cell.addBottomLine(0, color: UIColor.lightGrayColor())
         return cell
     }
@@ -158,15 +161,14 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         closeCurrentCombox()
         openCurrentCombox()
         
-       self.delegate.tapComboxToOpenTable?(self)
+        self.delegate.tapComboxToOpenTable?(self)
     }
-
+    
     
     //MARK: helper
     func dismissCombox()
     {
         reloadViewWithIndex(defaultIndex)
-        //isOpen = true
         tapTheCombox()
         delegate.selectedAtIndex?(defaultIndex, combox: self)
         NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "deSelectedRow", userInfo: nil, repeats: false)
@@ -174,12 +176,25 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     func closeOtherCombox()
     {
-        for subV in supView.subviews
+        closeSubCombox(supView)
+    }
+    
+    func closeSubCombox(subV: UIView)
+    {
+        if (subV.isKindOfClass(SWComboxView)) && (subV as! SWComboxView != self)
         {
-            if (subV.isKindOfClass(SWComboxView)) && (subV as! SWComboxView != self)
+            var otherCombox = subV as! SWComboxView
+            otherCombox.closeCurrentCombox()
+        }
+        else
+        {
+            var childViews:[AnyObject] = subV.subviews
+            if !childViews.isEmpty
             {
-                var otherCombox = subV as! SWComboxView
-                otherCombox.closeCurrentCombox()
+                for childV in childViews
+                {
+                    closeSubCombox(childV as! UIView)
+                }
             }
         }
     }
@@ -221,9 +236,9 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
                 self.supView.addSubview(self.tableView)
                 self.supView.bringSubviewToFront(self.tableView)
                 self.tableView.frame = self.getTableFrame()
-            }, completion: { finished in
-                self.isOpen = true
-                self.arrow.transform = CGAffineTransformRotate(self.arrow.transform, CGFloat(M_PI))
+                }, completion: { finished in
+                    self.isOpen = true
+                    self.arrow.transform = CGAffineTransformRotate(self.arrow.transform, CGFloat(M_PI))
             })
         }
     }

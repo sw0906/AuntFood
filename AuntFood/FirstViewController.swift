@@ -41,7 +41,7 @@ class FirstViewController: UIViewController, SWComboxViewDelegate {
         var list = ["good", "middle", "bad"]
         var comboxView:SWComboxView
         comboxView = SWComboxView.loadInstanceFromNibNamedToContainner(self.comboxTest)!
-        comboxView.bindData(list, comboxHelper: helper, seletedIndex: 1, superV: self.view, comboxDelegate:self)
+        comboxView.bindData(list, comboxHelper: helper, seletedIndex: 1, comboxDelegate:self)
     }
     
     func setupCombox2(){
@@ -57,7 +57,7 @@ class FirstViewController: UIViewController, SWComboxViewDelegate {
         var list = [country1, country2, country3]
         var comboxView:SWComboxView
         comboxView = SWComboxView.loadInstanceFromNibNamedToContainner(self.comboxTest2)!
-        comboxView.bindData(list, comboxHelper: helper, seletedIndex: 0, superV: self.view, comboxDelegate: self)
+        comboxView.bindData(list, comboxHelper: helper, seletedIndex: 0, comboxDelegate: self)
     }
     
     
