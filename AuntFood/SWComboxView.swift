@@ -67,7 +67,6 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     {
         self.helper.setCurrentView(data)
     }
-    
     func getCurrentValue() -> String
     {
         return helper.getCurrentTitle()
@@ -75,7 +74,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     
     //MARK: setup
-    func setupContentView()
+    private func setupContentView()
     {
         print("total count is \(list.count)")
         if defaultIndex < list.count
@@ -89,7 +88,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         setupFrame()
     }
     
-    func setupTable()
+    private func setupTable()
     {
         var orginY = self.frame.size.height
         var orginX:CGFloat = 0
@@ -118,7 +117,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     }
     
     
-    //MARK: table
+    //MARK: table delegate/data source
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
@@ -139,19 +138,15 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         dismissCombox()
     }
     
-    func deSelectedRow()
-    {
-        tableView.deselectRowAtIndexPath(tableView.indexPathForSelectedRow()!, animated: true)
-    }
     
     //MARK: reload
-    func reloadData()
+    private func reloadData()
     {
         tableView.reloadData()
         
     }
     
-    func reloadViewWithIndex(index: Int)
+    private func reloadViewWithIndex(index: Int)
     {
         defaultIndex = index
         var object: AnyObject = list[defaultIndex]
@@ -160,7 +155,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     
     //MARK: Tap Action
-    func tapTheCombox()
+    private func tapTheCombox()
     {
         closeOtherCombox()
         closeCurrentCombox()
@@ -171,7 +166,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     
     //MARK: helper
-    func dismissCombox()
+    private func dismissCombox()
     {
         reloadViewWithIndex(defaultIndex)
         tapTheCombox()
@@ -179,12 +174,17 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "deSelectedRow", userInfo: nil, repeats: false)
     }
     
-    func closeOtherCombox()
+    private func deSelectedRow()
+    {
+        tableView.deselectRowAtIndexPath(tableView.indexPathForSelectedRow()!, animated: true)
+    }
+    
+    private func closeOtherCombox()
     {
         closeSubCombox(supView)
     }
     
-    func closeSubCombox(subV: UIView)
+    private func closeSubCombox(subV: UIView)
     {
         if (subV.isKindOfClass(SWComboxView)) && (subV as! SWComboxView != self)
         {
@@ -204,7 +204,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         }
     }
     
-    func closeCurrentCombox()
+    private func closeCurrentCombox()
     {
         if self.isOpen
         {
@@ -228,7 +228,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         }
     }
     
-    func openCurrentCombox()
+    private func openCurrentCombox()
     {
         if !self.isOpen
         {
@@ -247,7 +247,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         }
     }
     
-    func getTableFrame() -> CGRect
+    private func getTableFrame() -> CGRect
     {
         var frame  = tableView.frame
         var countNumber = self.list.count > 4 ? 4.5 : CGFloat(self.list.count)
