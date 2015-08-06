@@ -166,15 +166,15 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     
     //MARK: helper
-    private func dismissCombox()
+    func dismissCombox()
     {
         reloadViewWithIndex(defaultIndex)
         tapTheCombox()
         delegate.selectedAtIndex?(defaultIndex, combox: self)
-        NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "deSelectedRow", userInfo: nil, repeats: false)
+        //NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "deSelectedRow", userInfo: nil, repeats: false)
     }
     
-    private func deSelectedRow()
+    func deSelectedRow()
     {
         tableView.deselectRowAtIndexPath(tableView.indexPathForSelectedRow()!, animated: true)
     }
