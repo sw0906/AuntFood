@@ -51,9 +51,10 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         delegate = comboxDelegate
         list = data
         helper = comboxHelper
+        supView = comboxDelegate as! UIView
         
         setupContentView()
-        setupTable()
+        //setupTable()
     }
     
     
@@ -61,7 +62,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     func show(isShow: Bool)
     {
         self.hidden = !isShow
-        tableView.hidden = !isShow
+        tableView?.hidden = !isShow
     }
     func preSelectWithObject(data: AnyObject)
     {
@@ -90,29 +91,16 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     private func setupTable()
     {
-        var orginY = self.frame.size.height
-        var orginX:CGFloat = 0
-        
-        var supviewR = self.superview
-        while(supviewR != nil)
+        if tableView == nil
         {
-            orginY += supviewR!.frame.origin.y
-            orginX += supviewR!.frame.origin.x
-            supView = supviewR
-            supviewR = supviewR?.superview
-        }
-        
-        var rect = CGRectMake(orginX, orginY, self.frame.size.width, 0)
-        tableView = UITableView(frame: rect, style: UITableViewStyle.Plain)
-        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.layer.borderWidth = 0.5;
-        tableView.layer.borderColor = UIColor.lightGrayColor().CGColor;
-        
-        if let parentV = supviewR
-        {
-            parentV.addSubview(tableView)
+            var rect = getTableOriginFrame()//CGRectMake(orginX, orginY, self.frame.size.width, 0)
+            tableView = UITableView(frame: rect, style: UITableViewStyle.Plain)
+            tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+            tableView.delegate = self
+            tableView.dataSource = self
+            tableView.layer.borderWidth = 0.5;
+            tableView.layer.borderColor = UIColor.lightGrayColor().CGColor;
+            supView.addSubview(tableView)
         }
     }
     
@@ -157,6 +145,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     //MARK: Tap Action
     private func tapTheCombox()
     {
+        setupTable()
         closeOtherCombox()
         closeCurrentCombox()
         openCurrentCombox()
@@ -166,18 +155,13 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     
     //MARK: helper
-    func dismissCombox()
+    private func dismissCombox()
     {
         reloadViewWithIndex(defaultIndex)
         tapTheCombox()
         delegate.selectedAtIndex?(defaultIndex, combox: self)
-        //NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "deSelectedRow", userInfo: nil, repeats: false)
     }
     
-    func deSelectedRow()
-    {
-        tableView.deselectRowAtIndexPath(tableView.indexPathForSelectedRow()!, animated: true)
-    }
     
     private func closeOtherCombox()
     {
@@ -188,8 +172,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     {
         if (subV.isKindOfClass(SWComboxView)) && (subV as! SWComboxView != self)
         {
-            var otherCombox = subV as! SWComboxView
-            otherCombox.closeCurrentCombox()
+            (subV as! SWComboxView).closeCurrentCombox()
         }
         else
         {
@@ -247,6 +230,27 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         }
     }
     
+    //table frame
+    private func getTableOriginFrame() -> CGRect
+    {
+        var orginY = self.frame.size.height
+        var orginX:CGFloat = 0
+        
+        var supviewR = self.superview
+        var endFlag = true
+        while(supviewR != nil && endFlag)
+        {
+            orginY += supviewR!.frame.origin.y
+            orginX += supviewR!.frame.origin.x
+            if (supviewR == self.supView)
+            {
+                endFlag = false
+            }
+            supviewR = supviewR?.superview
+        }
+        return CGRectMake(orginX, orginY, self.frame.size.width, 0)
+    }
+    
     private func getTableFrame() -> CGRect
     {
         var frame  = tableView.frame
@@ -259,6 +263,4 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         }
         return frame
     }
-    
-    
 }
