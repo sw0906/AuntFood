@@ -40,6 +40,11 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     
     //MARK: bind
+    func bindData(data: NSArray, comboxHelper: SWComboxCommonHelper, comboxDelegate:SWComboxViewDelegate)
+    {
+        bindData(data, comboxHelper: comboxHelper, seletedIndex: 0, comboxDelegate: comboxDelegate)
+    }
+    
     func bindData(data: NSArray, comboxHelper: SWComboxCommonHelper, seletedIndex: Int, comboxDelegate:SWComboxViewDelegate)
     {
         defaultIndex = seletedIndex
@@ -198,7 +203,6 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
             }
         }
     }
-    
     
     func closeCurrentCombox()
     {

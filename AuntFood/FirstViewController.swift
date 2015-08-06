@@ -67,6 +67,8 @@ class FirstViewController: UIViewController, SWComboxViewDelegate {
     {
     }
     func tapComboxToOpenTable(combox: SWComboxView)
-    {}
+    {
+        
+    }
 }
 

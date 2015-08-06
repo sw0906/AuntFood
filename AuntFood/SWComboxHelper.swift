@@ -8,24 +8,15 @@
 
 import UIKit
 
-class SWComboxCommonHelper : NSObject {
+protocol SWComboxCommonHelper {
     
     func loadCurrentView(contentView:UIView, data: AnyObject)
-    {
-        
-    }
     
-    func setCurrentView(data: AnyObject){
-    }
-
-    func getCurrentCell(tableView: UITableView, data: AnyObject) -> UITableViewCell {
-        return UITableViewCell()
-    }
+    func setCurrentView(data: AnyObject)
+    
+    func getCurrentCell(tableView: UITableView, data: AnyObject) -> UITableViewCell
     
     func getCurrentTitle() -> String
-    {
-        return ""
-    }
     
 }
 
@@ -35,17 +26,17 @@ class SWComboxTitleHelper: SWComboxCommonHelper {
     
     var comboxView:SWComboxTitle!
     
-    override func loadCurrentView(contentView:UIView, data: AnyObject)
+    func loadCurrentView(contentView:UIView, data: AnyObject)
     {
         comboxView = UIView.loadInstanceFromNibNamedToContainner(contentView)
         comboxView.bindTitle(data)
     }
     
-    override func setCurrentView(data: AnyObject){
+    func setCurrentView(data: AnyObject){
         comboxView.bindTitle(data)
     }
     
-    override func getCurrentCell(tableView: UITableView, data: AnyObject) -> UITableViewCell {
+    func getCurrentCell(tableView: UITableView, data: AnyObject) -> UITableViewCell {
         var cellFrame = comboxView.frame
         cellFrame.size.width = tableView.frame.size.width
         
@@ -58,7 +49,7 @@ class SWComboxTitleHelper: SWComboxCommonHelper {
         return cell
     }
     
-    override func getCurrentTitle() -> String {
+    func getCurrentTitle() -> String {
         return self.comboxView.name.text!
     }
     
@@ -68,17 +59,17 @@ class SWComboxCountryHelper: SWComboxCommonHelper {
     
     var comboxView:SWComboxCountry!
     
-    override func loadCurrentView(contentView:UIView, data: AnyObject)
+    func loadCurrentView(contentView:UIView, data: AnyObject)
     {
         comboxView = UIView.loadInstanceFromNibNamedToContainner(contentView)
         comboxView.bindCountry(data as! THCountry)
     }
     
-    override func setCurrentView(data: AnyObject){
+    func setCurrentView(data: AnyObject){
         comboxView.bindCountry(data as! THCountry)
     }
     
-    override func getCurrentCell(tableView: UITableView, data: AnyObject) -> UITableViewCell {
+    func getCurrentCell(tableView: UITableView, data: AnyObject) -> UITableViewCell {
         var cellFrame = comboxView.frame
         cellFrame.size.width = tableView.frame.size.width
         
@@ -91,7 +82,7 @@ class SWComboxCountryHelper: SWComboxCommonHelper {
         return cell
     }
     
-    override func getCurrentTitle() -> String {
+    func getCurrentTitle() -> String {
         return self.comboxView.name.text!
     }
 }
