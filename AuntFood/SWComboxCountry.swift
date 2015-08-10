@@ -8,9 +8,9 @@
 
 import UIKit
 
-class THCountry:NSObject {
+class SWCountry:NSObject {
     var name:String!
-    var code:String = ""
+    var image:UIImage!
 }
 
 
@@ -20,14 +20,15 @@ class SWComboxCountry: UIView {
     
     @IBOutlet weak var name: UILabel!
     
-    func bindCountry(country: THCountry)
+    func bindCountry(country: SWCountry)
     {
-        bindImage(country.code, title: country.name)
+        //bindImage(image: image, title: country.name)
+        bindImage(country.image, title: country.name)
     }
     
-    func bindImage(imageName:String, title: String)
+    func bindImage(image:UIImage, title: String)
     {
-//        icon.image = UIImage.flagImageForCountry(imageName)
+        icon.image = image
         name.text = title
     }
 }

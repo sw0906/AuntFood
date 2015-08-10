@@ -47,14 +47,18 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     func bindData(data: NSArray, comboxHelper: SWComboxCommonHelper, seletedIndex: Int, comboxDelegate:SWComboxViewDelegate)
     {
+        var containnerView = comboxDelegate as! UIView
+       bindData(data, comboxHelper: comboxHelper, seletedIndex: seletedIndex, comboxDelegate: comboxDelegate, containnerView: containnerView)
+    }
+    
+    func bindData(data: NSArray, comboxHelper: SWComboxCommonHelper, seletedIndex: Int, comboxDelegate:SWComboxViewDelegate, containnerView: UIView)
+    {
         defaultIndex = seletedIndex
         delegate = comboxDelegate
         list = data
         helper = comboxHelper
-        supView = comboxDelegate as! UIView
-        
+        supView = containnerView
         setupContentView()
-        //setupTable()
     }
     
     

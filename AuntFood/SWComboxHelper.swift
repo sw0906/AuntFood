@@ -62,11 +62,11 @@ class SWComboxCountryHelper: SWComboxCommonHelper {
     func loadCurrentView(contentView:UIView, data: AnyObject)
     {
         comboxView = UIView.loadInstanceFromNibNamedToContainner(contentView)
-        comboxView.bindCountry(data as! THCountry)
+        comboxView.bindCountry(data as! SWCountry)
     }
     
     func setCurrentView(data: AnyObject){
-        comboxView.bindCountry(data as! THCountry)
+        comboxView.bindCountry(data as! SWCountry)
     }
     
     func getCurrentCell(tableView: UITableView, data: AnyObject) -> UITableViewCell {
@@ -78,7 +78,7 @@ class SWComboxCountryHelper: SWComboxCommonHelper {
         
         var comboxV : SWComboxCountry
         comboxV = UIView.loadInstanceFromNibNamedToContainner(cell)!
-        comboxV.bindCountry(data as! THCountry)
+        comboxV.bindCountry(data as! SWCountry)
         return cell
     }
     

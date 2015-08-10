@@ -10,11 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AuntFood/SWComboxCountry.swift"
-            timestampString = "460377628.957539"
+            timestampString = "460889135.304832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33">
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "SWComboxCountry"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,11 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AuntFood/SWComboxCountry.swift"
-            timestampString = "460377628.957539"
+            timestampString = "460889135.304832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26">
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "bindCountry(_:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

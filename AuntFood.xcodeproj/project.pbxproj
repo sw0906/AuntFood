@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AB219F3C1B70800600A790DD /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB219F3B1B70800600A790DD /* UIViewEx.swift */; };
+		AB3AF4651B78986200AF03EF /* square-CN.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3AF4641B78986200AF03EF /* square-CN.png */; };
+		AB3AF4671B78987700AF03EF /* square-US.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3AF4661B78987700AF03EF /* square-US.png */; };
+		AB3AF4691B789AA900AF03EF /* square-JP.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3AF4681B789AA900AF03EF /* square-JP.png */; };
 		AB43E7C11B64AA560086D0D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E7C01B64AA560086D0D6 /* AppDelegate.swift */; };
 		AB43E7C31B64AA560086D0D6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E7C21B64AA560086D0D6 /* FirstViewController.swift */; };
 		AB43E7C51B64AA560086D0D6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43E7C41B64AA560086D0D6 /* SecondViewController.swift */; };
@@ -72,6 +75,9 @@
 
 /* Begin PBXFileReference section */
 		AB219F3B1B70800600A790DD /* UIViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
+		AB3AF4641B78986200AF03EF /* square-CN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-CN.png"; sourceTree = "<group>"; };
+		AB3AF4661B78987700AF03EF /* square-US.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-US.png"; sourceTree = "<group>"; };
+		AB3AF4681B789AA900AF03EF /* square-JP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-JP.png"; sourceTree = "<group>"; };
 		AB43E7BB1B64AA560086D0D6 /* AuntFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuntFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB43E7BF1B64AA560086D0D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB43E7C01B64AA560086D0D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 		AB219F4D1B70CDDB00A790DD /* Combox */ = {
 			isa = PBXGroup;
 			children = (
+				AB3AF4681B789AA900AF03EF /* square-JP.png */,
+				AB3AF4661B78987700AF03EF /* square-US.png */,
+				AB3AF4641B78986200AF03EF /* square-CN.png */,
 				AB4F4E4F1B6F4DEE007C4B9A /* SWComboxView.swift */,
 				AB4F4E501B6F4DEE007C4B9A /* SWComboxView.xib */,
 				AB4F4E5D1B6F56D1007C4B9A /* SWComboxHelper.swift */,
@@ -350,13 +359,16 @@
 			files = (
 				ABB25C2F1B652ECA004DECDC /* Cartfile in Resources */,
 				AB43E7C81B64AA560086D0D6 /* Main.storyboard in Resources */,
+				AB3AF4691B789AA900AF03EF /* square-JP.png in Resources */,
 				AB4F4E561B6F4EF5007C4B9A /* SWComboxCountry.xib in Resources */,
 				AB43E7CD1B64AA560086D0D6 /* LaunchScreen.xib in Resources */,
 				AB4F4E521B6F4DEE007C4B9A /* SWComboxView.xib in Resources */,
 				AB4F4E541B6F4E7D007C4B9A /* icn-dropdown.pdf in Resources */,
+				AB3AF4651B78986200AF03EF /* square-CN.png in Resources */,
 				AB43E7CA1B64AA560086D0D6 /* Images.xcassets in Resources */,
 				ABB25C2D1B652E22004DECDC /* Authentications in Resources */,
 				AB43E7E31B64AB5F0086D0D6 /* Login.storyboard in Resources */,
+				AB3AF4671B78987700AF03EF /* square-US.png in Resources */,
 				AB4F4E5A1B6F54A6007C4B9A /* SWComboxTitle.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
