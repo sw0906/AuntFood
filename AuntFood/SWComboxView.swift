@@ -47,7 +47,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     
     func bindData(data: NSArray, comboxHelper: SWComboxCommonHelper, seletedIndex: Int, comboxDelegate:SWComboxViewDelegate)
     {
-        var containnerView = comboxDelegate as! UIView
+        let containnerView = comboxDelegate as! UIView
        bindData(data, comboxHelper: comboxHelper, seletedIndex: seletedIndex, comboxDelegate: comboxDelegate, containnerView: containnerView)
     }
     
@@ -81,7 +81,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     //MARK: setup
     private func setupContentView()
     {
-        print("total count is \(list.count)")
+        print("total count is \(list.count)", terminator: "")
         if defaultIndex < list.count
         {
             self.helper.loadCurrentView(contentView, data: list[defaultIndex])
@@ -97,7 +97,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     {
         if tableView == nil
         {
-            var rect = getTableOriginFrame()//CGRectMake(orginX, orginY, self.frame.size.width, 0)
+            let rect = getTableOriginFrame()//CGRectMake(orginX, orginY, self.frame.size.width, 0)
             tableView = UITableView(frame: rect, style: UITableViewStyle.Plain)
             tableView.separatorStyle = UITableViewCellSeparatorStyle.None
             tableView.delegate = self
@@ -119,8 +119,8 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        print("table frame is \(self.tableView.frame)\n")
-        var cell = helper.getCurrentCell(self.tableView, data: list[indexPath.row])
+        print("table frame is \(self.tableView.frame)\n", terminator: "")
+        let cell = helper.getCurrentCell(self.tableView, data: list[indexPath.row])
         cell.addBottomLine(0, color: UIColor.lightGrayColor())
         return cell
     }
@@ -141,7 +141,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     private func reloadViewWithIndex(index: Int)
     {
         defaultIndex = index
-        var object: AnyObject = list[defaultIndex]
+        let object: AnyObject = list[defaultIndex]
         self.helper.setCurrentView(object)
     }
     
@@ -180,7 +180,7 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
         }
         else
         {
-            var childViews:[AnyObject] = subV.subviews
+            let childViews:[AnyObject] = subV.subviews
             if !childViews.isEmpty
             {
                 for childV in childViews
@@ -258,12 +258,12 @@ class SWComboxView: UIView, UITableViewDataSource, UITableViewDelegate
     private func getTableFrame() -> CGRect
     {
         var frame  = tableView.frame
-        var countNumber = self.list.count > 4 ? 4.5 : CGFloat(self.list.count)
+        let countNumber = self.list.count > 4 ? 4.5 : CGFloat(self.list.count)
         frame.size.height = self.contentView.frame.height * countNumber
-        var fullHeight = UIScreen.mainScreen().bounds.size.height
+        let fullHeight = UIScreen.mainScreen().bounds.size.height
         if frame.origin.y + frame.size.height > fullHeight
         {
-            frame.size.height == fullHeight - frame.origin.y
+            frame.size.height = fullHeight - frame.origin.y
         }
         return frame
     }

@@ -40,7 +40,7 @@ class SWComboxTitleHelper: SWComboxCommonHelper {
         var cellFrame = comboxView.frame
         cellFrame.size.width = tableView.frame.size.width
         
-        var cell = UITableViewCell()
+        let cell = UITableViewCell()
         cell.frame = cellFrame
         
         var comboxV : SWComboxTitle
@@ -73,7 +73,7 @@ class SWComboxCountryHelper: SWComboxCommonHelper {
         var cellFrame = comboxView.frame
         cellFrame.size.width = tableView.frame.size.width
         
-        var cell = UITableViewCell()
+        let cell = UITableViewCell()
         cell.frame = cellFrame
         
         var comboxV : SWComboxCountry

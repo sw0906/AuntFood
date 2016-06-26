@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import Alamofire
 
 class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        testNetwork()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +22,19 @@ class SecondViewController: UIViewController {
     }
 
 
+    
+    //MARK: test
+    func testNetwork(){
+        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
+            .validate()
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    print("Validation Successful")
+                case .Failure(let error):
+                    print(error)
+                }
+        }
+    }
 }
 

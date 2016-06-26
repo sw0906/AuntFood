@@ -3,9 +3,9 @@ import UIKit
 extension UIView {
     static func loadInstanceFromNib<T:UIView>() -> T? {
         var className = T.description()
-        className = split(className) {
+        className = className.characters.split {
             $0 == "."
-            }[1]
+            }.map { String($0) }[1]
         let nib = UINib(nibName: className, bundle: nil)
         let topLevelObjects = nib.instantiateWithOwner(self, options: nil)
         
@@ -26,7 +26,7 @@ extension UIView {
     //to containner
     static func loadInstanceFromNibNamedToContainner<T:UIView>(nibNamed: String, container: UIView)
         -> T? {
-            var instance: T? = self.loadInstanceFromNibNamed(nibNamed)
+            let instance: T? = self.loadInstanceFromNibNamed(nibNamed)
             container.addSubview(instance!)
             instance?.frame = container.bounds
             return instance
@@ -34,8 +34,8 @@ extension UIView {
     
     static func loadInstanceFromNibNamedToContainner<T:UIView>(container: UIView)
         -> T? {
-            var instance: T? = self.loadInstanceFromNib()
-            var frame = container.bounds
+            let instance: T? = self.loadInstanceFromNib()
+            let frame = container.bounds
             instance?.frame = frame
             container.addSubview(instance!)
             return instance
@@ -43,12 +43,12 @@ extension UIView {
     
     static func loadInstanceFromNibNamedToSrollContainner<T:UIView>(scrollView: UIScrollView)
         -> T? {
-            var instance: T? = self.loadInstanceFromNib()
+            let instance: T? = self.loadInstanceFromNib()
             scrollView.addSubview(instance!)
-            var width = scrollView.bounds.width
+            let width = scrollView.bounds.width
             var frame = instance!.frame
-            var ratio = CGFloat(frame.width) / CGFloat(frame.height)
-            var screenWidth = UIScreen.mainScreen().bounds.size.width
+            let ratio = CGFloat(frame.width) / CGFloat(frame.height)
+            _ = UIScreen.mainScreen().bounds.size.width
             frame.size = CGSizeMake(width, width / ratio)
             instance!.frame = frame
             instance!.setNeedsUpdateConstraints()
@@ -115,21 +115,21 @@ extension UIView {
     
     
     func removeAllSubviews() {
-        for view in (self.subviews as! [UIView]) {
+        for view in (self.subviews ) {
             view.removeFromSuperview()
         }
     }
     
     class func rasterizeView(view: UIView) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(view.frame.size, true, UIScreen.mainScreen().scale)
-        view.layer.renderInContext(UIGraphicsGetCurrentContext())
+        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
         let viewImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return viewImage
     }
     
     func isSubviewOf(view: UIView) -> Bool {
-        for v in view.subviews as! [UIView] {
+        for v in view.subviews {
             if v === self {
                 return true
             }
@@ -143,7 +143,7 @@ extension UIView {
     
     class func roundView(view: UIView, onCorner rectCorner: UIRectCorner, radius: CGFloat) {
         let maskPath = UIBezierPath(roundedRect: view.bounds, byRoundingCorners: rectCorner, cornerRadii: CGSizeMake(radius, radius))
-        var maskLayer = CAShapeLayer()
+        let maskLayer = CAShapeLayer()
         maskLayer.frame = view.bounds
         maskLayer.path = maskPath.CGPath
         view.layer.mask = maskLayer
@@ -184,7 +184,7 @@ extension UIView {
         frameLine.origin.y = frame.size.height - 0.5
         frameLine.origin.x = 12
         frameLine.size.width -= 24
-        var line = UIView(frame: frameLine)
+        let line = UIView(frame: frameLine)
         line.backgroundColor = color
         addSubview(line)
         bringSubviewToFront(line)
@@ -197,7 +197,7 @@ extension UIView {
         frameLine.origin.y = frame.size.height - 0.5
         frameLine.origin.x = margin
         frameLine.size.width -= margin * 2
-        var line = UIView(frame: frameLine)
+        let line = UIView(frame: frameLine)
         line.backgroundColor = color
         addSubview(line)
     }
@@ -208,7 +208,7 @@ extension UIView {
         frameLine.origin.y = frame.size.height - 0.5 - marginBottom
         frameLine.origin.x = marginLeft
         frameLine.size.width -= (marginLeft + marginRight)
-        var line = UIView(frame: frameLine)
+        let line = UIView(frame: frameLine)
         line.backgroundColor = color
         addSubview(line)
     }
