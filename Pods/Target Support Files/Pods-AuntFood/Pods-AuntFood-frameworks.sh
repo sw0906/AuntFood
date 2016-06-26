@@ -85,14 +85,26 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-AuntFood/Alamofire.framework"
+  install_framework "Pods-AuntFood/Charts.framework"
+  install_framework "Pods-AuntFood/CoreStore.framework"
+  install_framework "Pods-AuntFood/FontAwesomeKit.framework"
+  install_framework "Pods-AuntFood/GCDKit.framework"
   install_framework "Pods-AuntFood/Kingfisher.framework"
+  install_framework "Pods-AuntFood/MGSwipeTableCell.framework"
+  install_framework "Pods-AuntFood/ObjectMapper.framework"
   install_framework "Pods-AuntFood/SnapKit.framework"
   install_framework "Pods-AuntFood/Spring.framework"
   install_framework "Pods-AuntFood/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AuntFood/Alamofire.framework"
+  install_framework "Pods-AuntFood/Charts.framework"
+  install_framework "Pods-AuntFood/CoreStore.framework"
+  install_framework "Pods-AuntFood/FontAwesomeKit.framework"
+  install_framework "Pods-AuntFood/GCDKit.framework"
   install_framework "Pods-AuntFood/Kingfisher.framework"
+  install_framework "Pods-AuntFood/MGSwipeTableCell.framework"
+  install_framework "Pods-AuntFood/ObjectMapper.framework"
   install_framework "Pods-AuntFood/SnapKit.framework"
   install_framework "Pods-AuntFood/Spring.framework"
   install_framework "Pods-AuntFood/SwiftyJSON.framework"

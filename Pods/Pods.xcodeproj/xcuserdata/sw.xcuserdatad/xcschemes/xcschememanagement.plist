@@ -9,7 +9,37 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CoreStore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FontAwesomeKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GCDKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MGSwipeTableCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,17 +67,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02469E589262BACE2CD72C15D8886F89</key>
+		<key>27953419AFC74D73679111F110195DE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3D5513B3DCAA2F2DBC7CA4B975CCE2FE</key>
+		<key>3F00D565D57C68502AE1B355B9FEDE5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>407B26A161F7EB87C6D4941CC76056CA</key>
+		<key>4E1263BFF45F6446CF3DE29AE234C893</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5AD09256022BC0C2D738FE708A38A8A9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +92,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8BE9D4B6FF6D92923152CB0534F2BB94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>955D3917532BB952BEB3B9366B074898</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6828C2508515BC0428D6BDAA1292DC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5D6200D4BE741574DBD4FB768A6F55B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E96E13C4D3B5B5FC0651440734C2BF4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF3506303C9E647BBAFF5EA8377CDA29</key>
+		<key>F2677E8A383DBE1769BC7B8EBE42B243</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCFF539FC05FCDFB766888317D0C6DAD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
