@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 import SVProgressHUD
-import Chameleon
+import ChameleonFramework
 import MGSwipeTableCell
 
 class SecondViewController: UIViewController {

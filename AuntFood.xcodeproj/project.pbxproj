@@ -30,10 +30,7 @@
 		ABB25C121B652CB8004DECDC /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB25C111B652CB8004DECDC /* LoginMainViewController.swift */; };
 		ABB25C2D1B652E22004DECDC /* Authentications in Resources */ = {isa = PBXBuildFile; fileRef = ABB25C2C1B652E22004DECDC /* Authentications */; };
 		C49C1CDE7C357004F558148E /* Pods_AuntFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6E65F24524C82D004CD5E8 /* Pods_AuntFood.framework */; };
-		D0C2E2C41D20303100F63243 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C2E2C31D20303100F63243 /* SVProgressHUD.framework */; };
 		D0C2E3351D20313300F63243 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = D0C2E3341D20313300F63243 /* Cartfile */; };
-		D0C2E33A1D2033F500F63243 /* MGSwipeTableCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C2E3391D2033F500F63243 /* MGSwipeTableCell.framework */; };
-		D0C2E33B1D2035C600F63243 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C2E3361D20323300F63243 /* Chameleon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,9 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0C2E33B1D2035C600F63243 /* Chameleon.framework in Frameworks */,
-				D0C2E33A1D2033F500F63243 /* MGSwipeTableCell.framework in Frameworks */,
-				D0C2E2C41D20303100F63243 /* SVProgressHUD.framework in Frameworks */,
 				C49C1CDE7C357004F558148E /* Pods_AuntFood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
