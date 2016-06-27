@@ -11,12 +11,16 @@ import Alamofire
 import SVProgressHUD
 import ChameleonFramework
 import MGSwipeTableCell
+import FontAwesomeKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         testNetwork()
+        testFont()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +31,14 @@ class SecondViewController: UIViewController {
 
     
     //MARK: test
+    func  testFont()
+    {
+        let cogIcon = FAKFontAwesome.cogIconWithSize(20)
+        cogIcon.addAttribute(NSForegroundColorAttributeName, value: UIColor.blueColor())
+        self.imageView.image = cogIcon.imageWithSize(CGSizeMake(20,20))
+        cogIcon.iconFontSize = 15
+    }
+    
     func testNetwork(){
         Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
             .validate()

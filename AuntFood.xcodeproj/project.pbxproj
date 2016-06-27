@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845140741D20D5C900C0862C /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 845140701D20D5C900C0862C /* FontAwesome.otf */; };
+		845140751D20D5C900C0862C /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845140711D20D5C900C0862C /* foundation-icons.ttf */; };
+		845140761D20D5C900C0862C /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845140721D20D5C900C0862C /* ionicons.ttf */; };
+		845140771D20D5C900C0862C /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845140731D20D5C900C0862C /* zocial-regular-webfont.ttf */; };
 		AB219F3C1B70800600A790DD /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB219F3B1B70800600A790DD /* UIViewEx.swift */; };
 		AB3AF4651B78986200AF03EF /* square-CN.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3AF4641B78986200AF03EF /* square-CN.png */; };
 		AB3AF4671B78987700AF03EF /* square-US.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3AF4661B78987700AF03EF /* square-US.png */; };
@@ -59,6 +63,10 @@
 /* Begin PBXFileReference section */
 		3C6E65F24524C82D004CD5E8 /* Pods_AuntFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuntFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D9F8AE583097A061313A62 /* Pods-AuntFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuntFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuntFood/Pods-AuntFood.debug.xcconfig"; sourceTree = "<group>"; };
+		845140701D20D5C900C0862C /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.otf; path = Pods/FontAwesomeKit/FontAwesomeKit/FontAwesome.otf; sourceTree = "<group>"; };
+		845140711D20D5C900C0862C /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "foundation-icons.ttf"; path = "Pods/FontAwesomeKit/FontAwesomeKit/foundation-icons.ttf"; sourceTree = "<group>"; };
+		845140721D20D5C900C0862C /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = Pods/FontAwesomeKit/FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
+		845140731D20D5C900C0862C /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zocial-regular-webfont.ttf"; path = "Pods/FontAwesomeKit/FontAwesomeKit/zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
 		AB219F3B1B70800600A790DD /* UIViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
 		AB3AF4641B78986200AF03EF /* square-CN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-CN.png"; sourceTree = "<group>"; };
 		AB3AF4661B78987700AF03EF /* square-US.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-US.png"; sourceTree = "<group>"; };
@@ -148,6 +156,10 @@
 		AB43E7B21B64AA560086D0D6 = {
 			isa = PBXGroup;
 			children = (
+				845140701D20D5C900C0862C /* FontAwesome.otf */,
+				845140711D20D5C900C0862C /* foundation-icons.ttf */,
+				845140721D20D5C900C0862C /* ionicons.ttf */,
+				845140731D20D5C900C0862C /* zocial-regular-webfont.ttf */,
 				AB43E7BD1B64AA560086D0D6 /* AuntFood */,
 				AB43E7D51B64AA560086D0D6 /* AuntFoodTests */,
 				AB43E7BC1B64AA560086D0D6 /* Products */,
@@ -348,6 +360,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845140741D20D5C900C0862C /* FontAwesome.otf in Resources */,
+				845140751D20D5C900C0862C /* foundation-icons.ttf in Resources */,
+				845140761D20D5C900C0862C /* ionicons.ttf in Resources */,
+				845140771D20D5C900C0862C /* zocial-regular-webfont.ttf in Resources */,
 				AB43E7C81B64AA560086D0D6 /* Main.storyboard in Resources */,
 				AB3AF4691B789AA900AF03EF /* square-JP.png in Resources */,
 				AB4F4E561B6F4EF5007C4B9A /* SWComboxCountry.xib in Resources */,
