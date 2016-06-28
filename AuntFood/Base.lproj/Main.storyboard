@@ -233,6 +233,19 @@
                                     <constraint firstItem="xxX-gP-7j1" firstAttribute="top" secondItem="kr9-1O-VqG" secondAttribute="top" constant="50" id="iJi-Uq-P9D"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsf-xD-pag" customClass="FaceView" customModule="AuntFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="366" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MUk-N2-6dY"/>
+                                    <constraint firstAttribute="width" constant="240" id="wYk-xn-bkn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleV">
+                                        <real key="value" value="0.59999999999999998"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -242,6 +255,8 @@
                             <constraint firstItem="77s-nY-Ahh" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="Deg-2f-K1p"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
                             <constraint firstItem="77s-nY-Ahh" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="k40-UJ-gmn"/>
+                            <constraint firstItem="Nsf-xD-pag" firstAttribute="top" secondItem="NDk-cv-Gan" secondAttribute="bottom" constant="20" id="kL6-n6-eSV"/>
+                            <constraint firstItem="Nsf-xD-pag" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="mOy-6S-pRM"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>

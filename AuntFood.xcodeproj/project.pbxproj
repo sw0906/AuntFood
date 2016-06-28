@@ -11,6 +11,7 @@
 		845140751D20D5C900C0862C /* foundation-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845140711D20D5C900C0862C /* foundation-icons.ttf */; };
 		845140761D20D5C900C0862C /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845140721D20D5C900C0862C /* ionicons.ttf */; };
 		845140771D20D5C900C0862C /* zocial-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 845140731D20D5C900C0862C /* zocial-regular-webfont.ttf */; };
+		845140791D226BA100C0862C /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845140781D226BA100C0862C /* FaceView.swift */; };
 		AB219F3C1B70800600A790DD /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB219F3B1B70800600A790DD /* UIViewEx.swift */; };
 		AB3AF4651B78986200AF03EF /* square-CN.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3AF4641B78986200AF03EF /* square-CN.png */; };
 		AB3AF4671B78987700AF03EF /* square-US.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3AF4661B78987700AF03EF /* square-US.png */; };
@@ -67,6 +68,7 @@
 		845140711D20D5C900C0862C /* foundation-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "foundation-icons.ttf"; path = "Pods/FontAwesomeKit/FontAwesomeKit/foundation-icons.ttf"; sourceTree = "<group>"; };
 		845140721D20D5C900C0862C /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = Pods/FontAwesomeKit/FontAwesomeKit/ionicons.ttf; sourceTree = "<group>"; };
 		845140731D20D5C900C0862C /* zocial-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zocial-regular-webfont.ttf"; path = "Pods/FontAwesomeKit/FontAwesomeKit/zocial-regular-webfont.ttf"; sourceTree = "<group>"; };
+		845140781D226BA100C0862C /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		AB219F3B1B70800600A790DD /* UIViewEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
 		AB3AF4641B78986200AF03EF /* square-CN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-CN.png"; sourceTree = "<group>"; };
 		AB3AF4661B78987700AF03EF /* square-US.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square-US.png"; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				AB219F4D1B70CDDB00A790DD /* Combox */,
+				845140781D226BA100C0862C /* FaceView.swift */,
 			);
 			name = CommonView;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				AB43E7C11B64AA560086D0D6 /* AppDelegate.swift in Sources */,
 				AB43E7C31B64AA560086D0D6 /* FirstViewController.swift in Sources */,
 				AB4F4E581B6F4F07007C4B9A /* SWComboxCountry.swift in Sources */,
+				845140791D226BA100C0862C /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
