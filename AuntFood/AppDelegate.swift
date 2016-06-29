@@ -16,8 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let otherC = UIColor(complementaryFlatColorOf:FlatPink())
         Chameleon.setGlobalThemeUsingPrimaryColor(FlatPink(),
-                                                  withSecondaryColor: FlatGray(),
+                                                  withSecondaryColor: otherC,
                                                   andContentStyle: UIContentStyle.Light)
         return true
     }
