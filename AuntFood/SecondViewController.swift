@@ -26,6 +26,7 @@ class SecondViewController: UIViewController {
         testNetwork()
         testFont()
         testImageArray()
+        testProgress()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +37,12 @@ class SecondViewController: UIViewController {
 
     
     //MARK: test
+    func testProgress() {
+//        SVProgressHUD.showProgress(status: "loading", maskType: SVProgressHUDMaskType.Black)
+        SVProgressHUD.showWithStatus("loading", maskType: SVProgressHUDMaskType.Black)
+    }
+    
+    
     func testImageArray(){
         var cogIcon = FAKFontAwesome.cogIconWithSize(20)
         cogIcon.addAttribute(NSForegroundColorAttributeName, value: UIColor.blueColor())
