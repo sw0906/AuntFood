@@ -23,7 +23,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        testNetwork()
+//        testNetwork()
         testFont()
         testImageArray()
         testProgress()
@@ -48,10 +48,10 @@ class SecondViewController: UIViewController {
         cogIcon.addAttribute(NSForegroundColorAttributeName, value: UIColor.blueColor())
         self.array[0].image = cogIcon.imageWithSize(CGSizeMake(50, 50))
         
-        cogIcon = FAKFontAwesome.appleIconWithSize(20);
+        cogIcon = FAKFontAwesome.searchIconWithSize(20)//FAKFontAwesome.appleIconWithSize(20);
         self.array[1].image = cogIcon.imageWithSize(CGSizeMake(50, 50))
         
-        cogIcon = FAKFontAwesome.cropIconWithSize(20);
+        cogIcon = FAKFontAwesome.filterIconWithSize(20)//cropIconWithSize(20);
         self.array[2].image = cogIcon.imageWithSize(CGSizeMake(50, 50))
         
         cogIcon = FAKFontAwesome.eyeIconWithSize(20);

@@ -35,6 +35,7 @@
 		ABB25C121B652CB8004DECDC /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB25C111B652CB8004DECDC /* LoginMainViewController.swift */; };
 		ABB25C2D1B652E22004DECDC /* Authentications in Resources */ = {isa = PBXBuildFile; fileRef = ABB25C2C1B652E22004DECDC /* Authentications */; };
 		C49C1CDE7C357004F558148E /* Pods_AuntFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6E65F24524C82D004CD5E8 /* Pods_AuntFood.framework */; };
+		D00E296C1D27901C00F5CBF5 /* MovieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E296B1D27901C00F5CBF5 /* MovieItem.swift */; };
 		D0C2E3351D20313300F63243 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = D0C2E3341D20313300F63243 /* Cartfile */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		AB4F4E5D1B6F56D1007C4B9A /* SWComboxHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWComboxHelper.swift; sourceTree = "<group>"; };
 		ABB25C111B652CB8004DECDC /* LoginMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
 		ABB25C2C1B652E22004DECDC /* Authentications */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Authentications; sourceTree = "<group>"; };
+		D00E296B1D27901C00F5CBF5 /* MovieItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieItem.swift; sourceTree = "<group>"; };
 		D0C2E2C31D20303100F63243 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		D0C2E3341D20313300F63243 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		D0C2E3361D20323300F63243 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				AB43E7E41B64AB7A0086D0D6 /* login */,
 				AB43E7E61B64ABB40086D0D6 /* Category */,
 				AB43E7BE1B64AA560086D0D6 /* Supporting Files */,
+				D00E296B1D27901C00F5CBF5 /* MovieItem.swift */,
 			);
 			path = AuntFood;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				AB43E7C51B64AA560086D0D6 /* SecondViewController.swift in Sources */,
 				ABB25C121B652CB8004DECDC /* LoginMainViewController.swift in Sources */,
 				AB43E7C11B64AA560086D0D6 /* AppDelegate.swift in Sources */,
+				D00E296C1D27901C00F5CBF5 /* MovieItem.swift in Sources */,
 				AB43E7C31B64AA560086D0D6 /* FirstViewController.swift in Sources */,
 				AB4F4E581B6F4F07007C4B9A /* SWComboxCountry.swift in Sources */,
 				845140791D226BA100C0862C /* FaceView.swift in Sources */,

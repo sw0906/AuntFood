@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C77759EA29120DC7908270C9'
-               BlueprintName = 'Alamofire'
+               BlueprintIdentifier = 'FD9968B885FEFCC7A132FCE5'
+               BlueprintName = 'youtube-ios-player-helper'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Alamofire.framework'>
+               BuildableName = 'youtube_ios_player_helper.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

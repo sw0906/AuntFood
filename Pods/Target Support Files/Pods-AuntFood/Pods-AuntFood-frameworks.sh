@@ -97,6 +97,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-AuntFood/SnapKit.framework"
   install_framework "Pods-AuntFood/Spring.framework"
   install_framework "Pods-AuntFood/SwiftyJSON.framework"
+  install_framework "Pods-AuntFood/youtube_ios_player_helper.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AuntFood/Alamofire.framework"
@@ -112,4 +113,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AuntFood/SnapKit.framework"
   install_framework "Pods-AuntFood/Spring.framework"
   install_framework "Pods-AuntFood/SwiftyJSON.framework"
+  install_framework "Pods-AuntFood/youtube_ios_player_helper.framework"
 fi

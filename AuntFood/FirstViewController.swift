@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
-class FirstViewController: UIViewController, SWComboxViewDelegate {
+class FirstViewConvarller: UIViewController, SWComboxViewDelegate {
     
     
     @IBOutlet weak var comboxTest: UIView!
@@ -25,6 +27,8 @@ class FirstViewController: UIViewController, SWComboxViewDelegate {
         super.viewDidAppear(animated)
         setupCombox()
         setupCombox2()
+        
+//        testNetwork()
     }
     
     
@@ -75,5 +79,50 @@ class FirstViewController: UIViewController, SWComboxViewDelegate {
     {
         
     }
+    
+    
+    //test
+    func parseData(json: AnyObject)
+    {
+        let item = MovieItem()
+        
+        if let data = json.dataUsingEncoding(NSUTF8StringEncoding) {
+            let json = JSON(data: data)
+            
+//            for item in json["people"].arrayValue {
+//                print(item["firstName"].stringValue)
+//            }
+            item.Country = json["Country"].stringValue
+            item.Genre = json["Genre"].stringValue
+        }
+    }
+    
+    
+    func testNetwork(){
+        let url = "https://www.omdbapi.com"
+        let parameters = ["type" : "Movie", "t" : "old", "plot" : "short", "r" : "json" ];
+
+
+        Alamofire.request(.GET, url, parameters: parameters)
+            .validate()
+            .responseJSON { response in
+                
+                
+                print(response)
+                
+                
+                switch response.result {
+                case .Success:
+                    self.parseData(response.result.value!)
+                    print("Validation Successful")
+                case .Failure(let error):
+                    print(error)
+                }
+        }
+        
+
+    }
+    
+    
 }
 

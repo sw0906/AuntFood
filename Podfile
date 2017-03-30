@@ -26,7 +26,8 @@ pod 'SVProgressHUD'
 pod 'FontAwesomeKit'
 pod 'MGSwipeTableCell'
 pod 'Charts', :git => 'https://github.com/danielgindi/Charts'
-
+#pod 'YouTube-Player-iOS-Helper', '~> 0.1'
+pod 'youtube-ios-player-helper', '~> 0.1.4'
 end
 
 

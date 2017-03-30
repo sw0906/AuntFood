@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D15E084A5D65DE8FA7B2E297'
+               BlueprintIdentifier = 'AC1DC6F02282EA2D299D1488'
                BlueprintName = 'GCDKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'GCDKit.framework'>

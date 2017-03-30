@@ -31,6 +31,7 @@ PODS:
   - Spring (1.0.3)
   - SVProgressHUD (2.0.3)
   - SwiftyJSON (2.3.2)
+  - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
   - SVProgressHUD
   - SwiftyJSON
+  - youtube-ios-player-helper (~> 0.1.4)
 
 EXTERNAL SOURCES:
   Charts:
@@ -85,5 +87,6 @@ SPEC CHECKSUMS:
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
 COCOAPODS: 0.39.0
